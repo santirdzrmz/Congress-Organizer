@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.VerifierControllers">
+	<children>
+     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6edf3" height="702.0" layoutX="-11.0" layoutY="-62.0" stroke="BLACK" strokeType="INSIDE" width="870.0" />
+ 		<Button fx:id="returnToMain" layoutX="61.0" layoutY="39.0" mnemonicParsing="false" onAction="#returnToMainPressed" prefHeight="49.0" prefWidth="86.0" text="Go back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textBox" layoutX="69.0" layoutY="224.0" prefHeight="83.0" prefWidth="420.0" promptText="Staff only">
+         <font>
+            <Font size="31.0" />
+         </font></TextField>
+      <Label layoutX="69.0" layoutY="134.0" text="Enter your name: ">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMessage" alignment="CENTER" layoutX="173.0" layoutY="18.0" prefHeight="125.0" prefWidth="662.0" textFill="RED" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="scheduleButton" layoutX="210.0" layoutY="320.0" mnemonicParsing="false" onAction="#checkSchedulePressed" prefHeight="49.0" prefWidth="139.0" text="Check schedule">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="idLabel" layoutX="69.0" layoutY="379.0" prefHeight="65.0" prefWidth="400.0" text="Your ID is:">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="roleLabel" layoutX="61.0" layoutY="482.0" prefHeight="65.0" prefWidth="400.0" text="Your role is:">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Button fx:id="dayOne" layoutX="609.0" layoutY="307.0" mnemonicParsing="false" onAction="#dayOnePressed" prefHeight="49.0" prefWidth="86.0" text="Day One">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="dayTwo" layoutX="609.0" layoutY="387.0" mnemonicParsing="false" onAction="#dayTwoPressed" prefHeight="49.0" prefWidth="86.0" text="Day Two">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="dayThree" layoutX="609.0" layoutY="482.0" mnemonicParsing="false" onAction="#dayThreePressed" prefHeight="49.0" prefWidth="86.0" text="Day Three">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+	</children>
+</AnchorPane>

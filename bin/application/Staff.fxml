@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StaffControllers">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6edf3" height="602.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+      <Button fx:id="mainMenuButton" layoutX="48.0" layoutY="42.0" mnemonicParsing="false" onAction="#returnToMain" prefHeight="43.0" prefWidth="91.0" text="Go back ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+       <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="127.0" layoutY="474.0" prefHeight="45.0" prefWidth="600.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textBox" layoutX="128.0" layoutY="183.0" prefHeight="51.0" prefWidth="527.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <CheckBox fx:id="randomRoleButton" layoutX="125.0" layoutY="299.0" mnemonicParsing="false"  prefHeight="35.0" prefWidth="227.0" text="Randomize role">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="225.0" layoutY="117.0" text="Enter staff name">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="staffIdentificationLabel" layoutX="247.0" layoutY="474.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="setID" layoutX="125.0" layoutY="242.0" mnemonicParsing="false" onAction="#setTheID" prefHeight="43.0" prefWidth="91.0" text="Set ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchID" layoutX="239.0" layoutY="242.0" mnemonicParsing="false" onAction="#searchTheID" prefHeight="43.0" prefWidth="91.0" text="Search ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="roleTextBox" layoutX="401.0" layoutY="252.0" prefHeight="35.0" prefWidth="52.0" promptText="1-4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="343.0" layoutY="249.0" text="Role:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PopupOneControllers">
+	<children>
+		<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6edf3" height="671.0" layoutX="-51.0" layoutY="-8.0" stroke="BLACK" strokeType="INSIDE" width="908.0" />
+		<TableView fx:id="scheduleTable" editable="true" layoutX="24.0" layoutY="96.0" prefHeight="494.0" prefWidth="756.0">
+			<columns>
+				<TableColumn fx:id="activityCol" prefWidth="193.0" text="Activity" />
+				<TableColumn fx:id="timeCol" prefWidth="99.0" text="Time" />
+				<TableColumn fx:id="materialsCol" prefWidth="75.0" text="Materials" />
+				<TableColumn fx:id="classroomsCol" prefWidth="75.0" text="Classrooms" />
+				<TableColumn fx:id="rolesCol" prefWidth="75.0" text="Roles" />
+			</columns>
+			<columnResizePolicy>
+				<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+			</columnResizePolicy>
+		</TableView>
+      <Label alignment="CENTER" layoutX="336.0" layoutY="28.0" prefHeight="61.0" prefWidth="122.0" text="Day One" textAlignment="CENTER">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Button fx:id="verifierButton" layoutX="37.0" layoutY="23.0" mnemonicParsing="false" onAction="#returnToVerifier" prefHeight="57.0" prefWidth="132.0" text="Return to verifier" />
+      <Button fx:id="refreshButton" layoutX="688.0" layoutY="68.0" mnemonicParsing="false" onAction="#refreshTableView" text="Refresh" />
+	</children><!-- TODO Add Nodes -->
+</AnchorPane>
